@@ -1,99 +1,11 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Text5</title>
-    <!--
-    <style>
-        body{ margin: 0px; }
-        nav{ display: flex; padding: 10px; background-color: rgb(228, 162, 95);}
-        nav>.title{
-            flex:none;
-            width:120px;
-            background-color:rgb(213, 91, 50);
-        }
-        nav>.menu{
-            flex: auto;
-            background-color:rgb(17, 229, 73);
-            display: flex;
-            justify-content: flex-end;
-        }
-        nav>.menu_trigger{ display: none; }
-        nav>.menu>.item{ 
-            padding: 0px 10px;     
-            background-color: rgb(202, 164, 8); 
-        }
-        nav>.menu>.close{ display: none; }
-        @media (max-width:500px) {
-            nav>.menu{
-                position: fixed; top: 0px; left: 0px; width: 100vw; height: 100px;
-                background-color: rgb(7, 158, 7);
-                box-shadow: 0px 15px 5px #bb0909;
-                display:none;
-            }
-            nav>.menu>.item{
-                padding: 5px 0px;
-                text-align: center;
-            }
-            nav>.menu>.close{
-                display: block;
-            }
-            nav>.menu_trigger{
-                flex:auto;
-                display: flex;
-                justify-content: flex-end;
-            }
-        }
-        .welcome{
-            height:200px; background-color: mediumseagreen;
-            font-size: 36px; font-weight: bold;
-            display:flex; justify-content: center; align-items: center;
-        }
-        .main{
-            height: 50px;;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            background-color:magenta;
-        }
-    </style>
-    -->
-    <!--   <link rel="stylesheet" type="text/css" href="text2.css" />    -->
-    <body>
-        <div id="root"></div>
-    <!-- 
-        
-        <nav>
-        <div class="title">這是我的網頁</div>
-        <div class="menu">
-            <div class="item">選項1</div>
-            <div class="item">選項2</div>
-            <div class="item">選項3</div>
-            <div class="item close">X</div> 
-        </div>
-        <div class="menu_trigger">
-            <button>點我</button>
-        </div>
-    </nav>
-    <div class="welcome">歡迎, 你好</div>
-    <main class="main">主要內容</main>
-    -->
-    <script src="bundle.js"></script> 
-    <!--
-    <script>
-        function showMenu() {
-            let menu = document.querySelector("nav>.menu");
-            menu.style.display = "block";
-        } 
-        function closeMenu() {
-            let menu = document.querySelector("nav>.menu");
-            menu.style.display = "none";
-        } 
-        function changeWelcomeText() {
-            let welcome = document.querySelector(".welcome");
-            welcome.textContent = "Welcome";
-        }
-    </script>
-    -->
-    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reactShop</title>
+</head>
+<body>
+    <script src="./dist/bundle.js"></script>
+</body>
 </html>

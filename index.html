@@ -1,37 +1,99 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>interview</title>
-	</head>
-	<body style="background-color:#FFD053">
-		<div style="font-weight:bold; font-size:24px">今天去「履歷健檢」和「模擬面試」。</div>
-		<div style="margin-top:10px"><span style="font-weight:bold; color:blue">1.事前準備：</span>自己寫好履歷，準備簡單的自我介紹，問題的答覆，如：你曾經遇過的困難？以及如何解決？</div>
-		<div style="margin-top:10px"><span style="font-weight:bold; color:blue">2.實際狀況：</span></div>
-		<div style="margin-top:10px">
-			<span style="color:#99348D">(1)履歷：</span>履歷健檢師建議我照人力銀行履歷的範本，第一面基本資料，第二面自傳，第三面作品集。可以多加些具體實例，
-			如：證照，比賽經歷、文字說明的故事、成績單、修課紀錄。照片要微笑或不微笑都可以，證件照最安全。
-		</div>
-		<div style="margin-top:10px">
-			<span style="color:#99348D">(2)面試：</span>注意eye contact。講話一開始加標題，讓面試官更好理解。中間穿插一些比較軟性的話題，一點點就好，譬如：自己來自哪個縣市，
-			使氣氛不要過於嚴肅。最後發表要結束時，記得下個結論，一方面幫對方複習，另一方面也讓別人知道你講完了。有事先準備很好，但不要
-			像在背稿，儘量練習講的自然。即使打工經驗和應徵的工作不相關，也可以說，企業需要知道你有職場上的經驗。剛進入面試的房間時，跟
-			面試官說：「你好」即可。如果面試官比你晚進來，記得站起來，不要呆呆的坐在那邊。
-			
-		</div>
-		<div style="margin-top:10px">
-			<span style="color:#99348D">(3)服裝：</span>今天的服裝可以，襯衫加長褲。只是衣服不要皺。
-		</div>
-		<div style="margin-top:10px">
-			<span style="color:#99348D">(4)模擬問題：</span>你遇過的困難？你怎麼看ChatGPT，你會被它取代嗎？描述一下你的打工經歷。你對這個職位有哪些想像或你覺得在做什麼？
-			他說，我在回答打工經驗時，回答得很好。因為我除了說明要做哪些工作外，還補充了，具體學到的東西和實際發生的狀況。比如：我從餐廳服務生
-			的工作，培養做事要仔細和專心，有時手上三個盤子，不小心送錯桌子就糟了。遇到客人無理的要求，說加湯可以，那可不可以加料
-			，還要委婉地向他說明，學到了溝通的技巧。
-		</div>
-		<div style="margin-top:10px">
-			<span style="font-weight:bold; color:blue">3.感想：</span>今天學到很多。接下來，我會多練習講話時的眼神接觸。之後上研究所也應該多參加比賽和實習，增加一些別人看得見的經驗。
-			英文繼續努力。
-		</div>
-		
-	</body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text5</title>
+    <!--
+    <style>
+        body{ margin: 0px; }
+        nav{ display: flex; padding: 10px; background-color: rgb(228, 162, 95);}
+        nav>.title{
+            flex:none;
+            width:120px;
+            background-color:rgb(213, 91, 50);
+        }
+        nav>.menu{
+            flex: auto;
+            background-color:rgb(17, 229, 73);
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav>.menu_trigger{ display: none; }
+        nav>.menu>.item{ 
+            padding: 0px 10px;     
+            background-color: rgb(202, 164, 8); 
+        }
+        nav>.menu>.close{ display: none; }
+        @media (max-width:500px) {
+            nav>.menu{
+                position: fixed; top: 0px; left: 0px; width: 100vw; height: 100px;
+                background-color: rgb(7, 158, 7);
+                box-shadow: 0px 15px 5px #bb0909;
+                display:none;
+            }
+            nav>.menu>.item{
+                padding: 5px 0px;
+                text-align: center;
+            }
+            nav>.menu>.close{
+                display: block;
+            }
+            nav>.menu_trigger{
+                flex:auto;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+        .welcome{
+            height:200px; background-color: mediumseagreen;
+            font-size: 36px; font-weight: bold;
+            display:flex; justify-content: center; align-items: center;
+        }
+        .main{
+            height: 50px;;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color:magenta;
+        }
+    </style>
+    -->
+    <!--   <link rel="stylesheet" type="text/css" href="text2.css" />    -->
+    <body>
+        <div id="root"></div>
+    <!-- 
+        
+        <nav>
+        <div class="title">這是我的網頁</div>
+        <div class="menu">
+            <div class="item">選項1</div>
+            <div class="item">選項2</div>
+            <div class="item">選項3</div>
+            <div class="item close">X</div> 
+        </div>
+        <div class="menu_trigger">
+            <button>點我</button>
+        </div>
+    </nav>
+    <div class="welcome">歡迎, 你好</div>
+    <main class="main">主要內容</main>
+    -->
+    <script src="bundle.js"></script> 
+    <!--
+    <script>
+        function showMenu() {
+            let menu = document.querySelector("nav>.menu");
+            menu.style.display = "block";
+        } 
+        function closeMenu() {
+            let menu = document.querySelector("nav>.menu");
+            menu.style.display = "none";
+        } 
+        function changeWelcomeText() {
+            let welcome = document.querySelector(".welcome");
+            welcome.textContent = "Welcome";
+        }
+    </script>
+    -->
+    </body>
 </html>

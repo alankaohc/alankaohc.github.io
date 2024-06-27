@@ -5,12 +5,14 @@
         <title>My fisrt page</title>
     </head>
     <body>
+		<div id="one"></div>
 		<script>
 			let url = window.location.href;
 			console.log(url);
 			const para = document.createElement("div");
             para.innerText = url;
             document.body.appendChild(para);
+			document.getElementById('one').id = url;
         </script>  
     </body>
 </html>

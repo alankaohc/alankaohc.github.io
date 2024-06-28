@@ -12,12 +12,14 @@
 		</form>
 		<div id="one"></div>
 		<script>
-			let url = window.location.href;
-			console.log(url);
-			const para = document.createElement("div");
-            para.innerText = 'url : ' + url;
-            document.body.appendChild(para);
-
+			var fs = require("fs");
+fs.readFile('./sample.txt', 'utf-8', function (err, data) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log("非同步讀取: " + data.toString());
+    }
+})
         </script>  
     </body>
 </html>

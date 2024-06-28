@@ -5,14 +5,19 @@
         <title>My fisrt page</title>
     </head>
     <body>
+		<form action="" method="get">
+			<input type="text" name="number">
+			<input type="submit">
+
+		</form>
 		<div id="one"></div>
 		<script>
 			let url = window.location.href;
 			console.log(url);
 			const para = document.createElement("div");
-            para.innerText = url;
+            para.innerText = 'url : ' + url;
             document.body.appendChild(para);
-			document.getElementById('one').id = url;
+
         </script>  
     </body>
 </html>
